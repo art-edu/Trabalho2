@@ -1,38 +1,74 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
 .form-container {
-  margin: 20px auto;
+  margin: 100px auto;
   max-width: 600px;
   text-align: left;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
 }
+
 form label {
   display: block;
+  font-weight: bold;
   margin-bottom: 10px;
+  color: #555;
 }
+
 form input,
 form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 15px;
   margin-top: 5px;
   margin-bottom: 15px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 50px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
+
+form input:focus,
+form textarea:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.5);
+}
+
 form button {
-  padding: 10px 20px;
+  padding: 16px 60px;
   background-color: #28a745;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 33px;
   cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
+
 form button:hover {
   background-color: #218838;
+  transform: scale(1.05);
 }
+
+form button:active {
+  transform: scale(0.95);
+}
+
 .error {
   color: red;
   font-size: 0.9em;
 }
+
 .success {
   color: green;
   font-size: 1em;
   text-align: center;
 }
+
+
