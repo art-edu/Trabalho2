@@ -1,0 +1,38 @@
+.form-container {
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+}
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+form button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #218838;
+}
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+.success {
+  color: green;
+  font-size: 1em;
+  text-align: center;
+}
